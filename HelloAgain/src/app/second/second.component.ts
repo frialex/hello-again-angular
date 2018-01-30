@@ -11,7 +11,13 @@ export class SecondComponent implements OnInit {
                  {href: "https://github.com/angular/angular-cli/wiki", text: "CLI Documentation"},
                  {href: "https://angular.io/guide/displaying-data", text: "Displaying Data"}]
 
-  constructor() { }
+  constructor() { 
+    var self=this
+    
+    setTimeout(function() {
+     self.listOfStuff.push({href: "https://angular.io/guide/template-syntax", text: "Template syntax"})
+    }, 4000);
+  }
 
   ngOnInit() {
   }
