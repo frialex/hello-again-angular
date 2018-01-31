@@ -6,6 +6,7 @@
   <li *ngFor="let link of listOfStuff">
     <h2><a target="_blank" rel="noopener" href="{{link.href}}">{{link.text}}</a></h2>
   </li>
+  <p *ngIf="listOfStuff.length > 3">lots of stuff to learn</p>
 
 </ul>
 </div>
